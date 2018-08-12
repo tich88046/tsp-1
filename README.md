@@ -1,3 +1,3 @@
 # tsp
-Traveling Salesman Problem 
+Teaspoon Problem 
 by Hunter Lum and Timothy Chung
