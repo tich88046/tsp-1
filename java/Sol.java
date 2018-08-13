@@ -1,4 +1,4 @@
-package tsp;
+//package tsp;
 
 public class Sol {
 	public int [] path;
