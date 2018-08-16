@@ -31,11 +31,19 @@ public class main {
 
 		City [] citiesArr=cities.toArray(new City[cities.size()]);
 		//if translated to C, you can delete cities
-		for(int j=0;j<100;j++){
-			System.out.println(citiesArr[j]);
-		}
-
-		System.out.println(Sol.distance(citiesArr[1],citiesArr[2]));
+		Path one= new Path(citiesArr[1],citiesArr[2]);
+		Map<Path,Double> dict= new HashMap<Path,Double>();
+		dict.put(one,1.1);
+		Path two= new Path(citiesArr[1],citiesArr[2]);
+		
+		System.out.println(one.from.id+" "+one.to.id+" "+two.from.id+" "+two.to.id+" ");
+		System.out.println(one.equals(two));
+		System.out.println(two.equals(one));
+		System.out.println(dict.get(one));
+		System.out.println(dict.get(two));	
+		System.out.println(dict);	
+		
+		System.out.println(one.hashCode()+" "+two.hashCode());
 
 	}
 
