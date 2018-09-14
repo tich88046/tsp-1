@@ -32,7 +32,14 @@ public class main {
 		City [] citiesArr=cities.toArray(new City[cities.size()]);
 		Sol s= new Sol(citiesArr);
 		System.out.println(s);
-
+//population
+		Sol [] pop= new Sol [10];
+		for(int j=0;j<10;j++){
+			pop[j]=s;
+		}
+		for(int j=0;j<10;j++){
+			System.out.println(pop[j].fitness);
+		}
 
 	}
 
