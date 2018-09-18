@@ -31,8 +31,18 @@ public class main {
 
 		City [] citiesArr=cities.toArray(new City[cities.size()]);
 		Sol s= new Sol(citiesArr);
+		/*
 		System.out.println(s);
+		Sol t=GA.swapCity(0,1,s);
+		System.out.println( s );
+		System.out.println(t);
+		int test=citiesArr.length;
+		System.out.println(test); 
+		*/
+
+		GA test2=new GA(500000,s);
 //population
+		/*
 		Sol [] pop= new Sol [10];
 		for(int j=0;j<10;j++){
 			pop[j]=s;
@@ -40,7 +50,9 @@ public class main {
 		for(int j=0;j<10;j++){
 			System.out.println(pop[j].fitness);
 		}
+		*/
 
 	}
+
 
 }

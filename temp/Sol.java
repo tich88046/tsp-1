@@ -20,7 +20,7 @@ public class Sol {
 
 	public String toString(){
 		String s="";
-		for(int i=0;i<100;i++){
+		for(int i=0;i<this.path.length;i++){
 			s=s+this.path[i].id+",";
 		}
 		//eventually get rid of the last comma for ocd reasons
