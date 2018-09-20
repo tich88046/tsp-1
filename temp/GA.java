@@ -9,19 +9,21 @@ public class GA{
 		System.out.println("Begin GA");
 		while(i < population.length){
 			population[i]=swapCity(rand.nextInt(data.path.length),rand.nextInt(data.path.length),data);
-			System.out.println(population[i]);
+			//System.out.println(population[i]);
 
 			i++;
 
 		}
 	}
 	public static Sol swapCity(int i,int j, Sol solution){
-		//create out of index 
+		//copies the solution and outputs a new Sol with the intended swap
+		//create out of index error
 		City [] tempArr=solution.path.clone();
 		City temp=tempArr[i];
 		tempArr[i]=tempArr[j];
 		tempArr[j]=temp;
 		return new Sol(tempArr);
 	}
+
 
 }

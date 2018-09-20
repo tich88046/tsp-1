@@ -40,7 +40,25 @@ public class main {
 		System.out.println(test); 
 		*/
 
-		GA test2=new GA(500000,s);
+		GA test2=new GA(10,s);
+		Arrays.sort(test2.population);
+
+		int count=0;
+		while(count<test2.population.length){
+			System.out.println(test2.population[count].fitness);
+			count++;
+		}
+		Sol b=new Sol(citiesArr);
+		//b=GA.swapCity(0,1,s);
+		//b=GA.swapCity(0,1,b);
+		System.out.println(b.equals(s));
+		System.out.println(b.fitness==s.fitness);
+		Map dict=new HashMap();
+		dict.put(s,100);
+		//dict.put(b,200);
+		System.out.println(dict.get(b));
+		System.out.println(b.compareTo(s));
+		//test2.weights();
 //population
 		/*
 		Sol [] pop= new Sol [10];
