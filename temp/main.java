@@ -40,7 +40,7 @@ public class main {
 		System.out.println(test); 
 		*/
 
-		GA test2=new GA(10,s);
+		GA test2=new GA(10000,s);
 		Arrays.sort(test2.population);
 
 		int count=0;
@@ -57,7 +57,24 @@ public class main {
 		dict.put(s,100);
 		//dict.put(b,200);
 		System.out.println(dict.get(b));
-		System.out.println(b.compareTo(s));
+		//System.out.println(b.compareTo(s));
+
+		//j is generation count
+		for(int j=0;j<1000;j++){
+			System.out.println("Generation: "+j);
+			test2.repopulate();
+
+			count=0;
+			while(count<test2.population.length){
+				System.out.println(test2.population[count].fitness);
+				count++;
+			}
+		}
+
+		System.out.println("Your best solution: ");
+		test2.repopulate();
+		System.out.println(test2.population[0]);
+		
 		//test2.weights();
 //population
 		/*
