@@ -1,9 +1,6 @@
-//package tsp;
-
 class Sol implements Comparable<Sol>{
 	public City [] path;
 	public double fitness;
-//README!! All 100 must be chaanged to arry size
 	Sol(City [] input){
 		this.path=input;
 		int n =this.path.length;
