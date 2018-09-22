@@ -1,7 +1,7 @@
 main: build run
 
 build: 
-	javac main.java Sol.java City.java
+	javac main.java Sol.java City.java Path.java GA.java
 run:
 	java main
 clean: 
