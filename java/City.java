@@ -13,4 +13,13 @@ public class City{
 		String s="City id: "+this.id+" X Coord: "+this.x+" Y Coord: "+this.y;
 		return s;
 	}
+
+	public boolean equals(City a){
+		if(this.id==a.id&&this.x==a.x&&this.y==a.y){
+			return true;
+		}
+		else{
+			return false; 
+		}
+	}
 }

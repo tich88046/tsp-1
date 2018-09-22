@@ -1,4 +1,4 @@
-public class Path{
+class Path{
 	public City from;
 	public City to;
 
